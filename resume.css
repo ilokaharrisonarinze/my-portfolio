@@ -15,6 +15,24 @@ body {
   background-repeat: no-repeat;
 }
 
+.brand {
+  display: block;
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 28px 24px 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+.brand:hover {
+  border-color: transparent;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -197,6 +215,7 @@ a:hover {
 }
 
 @media (max-width: 920px) {
+
   .resume-header,
   .experience-card,
   .education-card {
