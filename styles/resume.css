@@ -15,21 +15,39 @@ body {
   background-repeat: no-repeat;
 }
 
-.brand {
-  display: block;
+.site-header {
   width: min(100%, 1100px);
   margin: 0 auto;
   padding: 28px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
   font-size: 1.3rem;
   font-weight: 800;
   letter-spacing: 0.25em;
   color: #fff;
-  text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: none;
   border-bottom: none;
 }
 
 .brand:hover {
+  border-color: transparent;
+  color: #fff;
+}
+
+.site-nav a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.95rem;
+  border-bottom: none;
+}
+
+.site-nav a:hover {
+  color: #ffffff;
   border-color: transparent;
 }
 
@@ -233,6 +251,13 @@ a:hover {
   }
 }
 
+@media (max-width: 840px) {
+  .site-header {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 @media (max-width: 660px) {
   .resume-shell {
     padding: 24px 16px 32px;
@@ -246,5 +271,21 @@ a:hover {
   .skill-grid,
   .project-list {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    padding-top: 20px;
+  }
+
+  .brand {
+    font-size: 1.15rem;
+    letter-spacing: 0.2em;
+  }
+
+  .site-nav a {
+    margin-left: 14px;
+    font-size: 0.88rem;
   }
 }
